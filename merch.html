@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch oficial | Argentina Comic Con 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="shop-page">
+<header class="header">
+<a href="index.html#inicio" class="logo"><span>ARGENTINA</span><strong>COMIC CON</strong><small>2026</small></a>
+<nav class="nav"><a href="index.html#inicio">Inicio</a><a href="index.html#fechas">Fechas</a><a href="index.html#dia-a-dia">Día a Día</a><a href="index.html#galeria">Galería</a><a href="index.html#suscribite">Suscribite</a><a href="index.html#faq">FAQ</a><a href="index.html#ubicacion">Ubicación</a><a class="nav-merch active" href="merch.html">MERCH</a><a href="#historial-compras">Mis compras</a></nav>
+<a href="index.html#fechas" class="btn btn-header">COMPRAR</a>
+</header>
+<main>
+<section class="shop-hero"><p class="etiqueta-seccion">LLEVATE UN RECUERDO</p><h1>MERCH <span>OFICIAL</span></h1><p>La experiencia Comic Con también sigue después del evento.</p><div class="shop-comic-burst">¡WOW!</div></section>
+<section class="shop-main">
+<div class="shop-products">
+<article class="shop-product"><div class="shop-product-art art-keychain" role="img" aria-label="Llavero coleccionable Comic Con 2026"><div class="key-ring"></div><div class="key-tag">ARGENTINA<br><b>COMIC CON</b><small>2026</small></div><span class="pop-word">POW!</span></div><div class="shop-product-info"><span class="entrada-tipo">ACCESORIOS</span><h2>Llavero Comic Con 2026</h2><p>Un recuerdo para llevar tu fandom a todas partes.</p><strong>$8.000</strong><button class="btn-entrada agregar-carrito" data-id="llavero" data-nombre="Llavero Comic Con 2026" data-precio="8000">AGREGAR AL CARRITO</button></div></article>
+<article class="shop-product"><div class="shop-product-art art-shirt" role="img" aria-label="Remera negra edición Comic Con 2026"><div class="shirt-shape"><span>ARGENTINA<br><b>COMIC CON</b><small>2026</small></span></div><span class="pop-word">EPIC!</span></div><div class="shop-product-info"><span class="entrada-tipo">INDUMENTARIA</span><h2>Remera Comic Con 2026</h2><p>Diseño exclusivo para fans de la cultura pop.</p><strong>$25.000</strong><button class="btn-entrada agregar-carrito" data-id="remera" data-nombre="Remera Comic Con 2026" data-precio="25000">AGREGAR AL CARRITO</button></div></article>
+<article class="shop-product"><div class="shop-product-art art-tote" role="img" aria-label="Bolsa tote de tela Comic Con 2026"><div class="tote-handle"></div><div class="tote-shape">ARGENTINA<br><b>COMIC CON</b><small>2026</small><i>✦ ✦ ✦</i></div><span class="pop-word">ZAP!</span></div><div class="shop-product-info"><span class="entrada-tipo">ACCESORIOS</span><h2>Bolsa tote Comic Con 2026</h2><p>Bolsa reutilizable con una gráfica pop bien comiquera.</p><strong>$12.000</strong><button class="btn-entrada agregar-carrito" data-id="tote" data-nombre="Bolsa tote Comic Con 2026" data-precio="12000">AGREGAR AL CARRITO</button></div></article>
+</div>
+<section class="checkout shop-checkout" id="datos-compra"><div class="checkout-heading"><p class="etiqueta-seccion">TU PEDIDO</p><h2>CARRITO Y FINALIZACIÓN</h2><p>Revisá los productos y completá los datos para generar una compra de prueba.</p></div><div class="checkout-grid">
+<div class="carrito-panel"><h3>MI CARRITO</h3><div id="carrito-vacio">Todavía no agregaste productos.</div><div id="carrito-lista"></div><p class="carrito-total">TOTAL: <strong id="carrito-total">$0</strong></p><button type="button" class="btn-entrada vaciar-carrito" id="vaciar-carrito">VACIAR CARRITO</button></div>
+<form class="compra-form" id="form-compra"><h3>DATOS DE COMPRA</h3><label for="compra-nombre">Nombre y apellido</label><input id="compra-nombre" name="nombre" type="text" required placeholder="Juan Pérez"><label for="compra-email">Correo electrónico</label><input id="compra-email" name="email" type="email" required placeholder="tuemail@gmail.com"><label for="compra-dni">DNI</label><input id="compra-dni" name="dni" type="text" required inputmode="numeric" placeholder="12345678">
+<label for="medio-pago">Tarjeta</label><select id="medio-pago" name="pago" required><option value="">Seleccioná una tarjeta</option><option value="Visa">Visa</option><option value="Mastercard">Mastercard</option><option value="American Express">American Express</option></select>
+<label for="numero-tarjeta">Número de tarjeta (16 dígitos)</label><input id="numero-tarjeta" name="numeroTarjeta" type="text" inputmode="numeric" autocomplete="cc-number" maxlength="19" placeholder="0000 0000 0000 0000" required>
+<label for="cuotas">Cantidad de cuotas</label><select id="cuotas" name="cuotas" required><option value="1">1 pago</option><option value="3">3 cuotas sin interés (Visa / Mastercard)</option></select><p class="aviso-demo" id="aviso-cuotas">3 cuotas sin interés disponibles para Visa y Mastercard. American Express: 1 pago.</p>
+<p class="aviso-demo"><strong>Demostración académica:</strong> no se realizan cobros. Usá datos ficticios; el número de tarjeta no se guarda ni se procesa.</p><button class="btn-entrada" type="submit">CONFIRMAR COMPRA DE PRUEBA</button><p id="mensaje-compra" role="status"></p></form></div></section>
+<section class="historial shop-history" id="historial-compras"><div class="checkout-heading"><p class="etiqueta-seccion">MIS PEDIDOS</p><h2>HISTORIAL DE COMPRAS</h2></div><div id="historial-lista"></div></section>
+</section>
+</main>
+<footer class="footer"><p>ARGENTINA COMIC CON 2026 · <a href="index.html">Volver al sitio principal</a></p></footer>
+<script src="script.js"></script>
+</body></html>
