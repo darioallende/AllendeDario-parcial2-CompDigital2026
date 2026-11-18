@@ -1410,3 +1410,240 @@ input {
 .shop-checkout,.shop-history { margin:55px auto 0; } .shop-checkout .checkout-heading h2,.shop-history .checkout-heading h2 { color:var(--yellow); } .compra-form input,.compra-form select { border-radius:5px; } .shop-page .footer { padding:25px; text-align:center; } .shop-page .footer a { color:var(--yellow); text-decoration:underline; }
 @media(max-width:900px){.shop-products{grid-template-columns:repeat(2,minmax(0,1fr));}.shop-comic-burst{right:3%;top:8px;}}
 @media(max-width:620px){.shop-products{grid-template-columns:1fr;max-width:480px}.shop-hero{padding:60px 5% 40px}.shop-comic-burst{display:none}.shop-product-art{height:250px}.shop-main{padding:30px 5%}.shop-checkout,.shop-history{padding:18px;margin-top:35px}}
+
+/* =====================================
+   COMPRA DE ENTRADAS - COMIC CON 2026
+===================================== */
+
+#datos-compra,
+#mis-compras {
+    scroll-margin-top: 100px;
+}
+
+#datos-compra .carrito-panel label {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+#datos-compra .carrito-panel select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid var(--border);
+    font: inherit;
+}
+
+.resumen-pago {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 0;
+    margin-top: 12px;
+    border-top: 2px solid var(--border);
+}
+
+.resumen-pago strong {
+    color: var(--purple);
+    font-size: 25px;
+}
+
+#mensaje-compra {
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+#mis-compras {
+    scroll-margin-top: 100px;
+}
+
+#mis-compras .historial-item {
+    padding: 18px;
+    margin-bottom: 12px;
+    background: #302440;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+#mis-compras .historial-item strong {
+    color: var(--yellow);
+}
+
+#mis-compras .historial-item p {
+    margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+
+    #datos-compra .checkout-grid {
+        gap: 18px;
+    }
+
+    .resumen-pago {
+        flex-wrap: wrap;
+    }
+
+}
+/* ANIMACIONES DE LOS TITULOS */
+
+.titulo-animado {
+    display: inline-block;
+    transform-origin: center;
+}
+
+/* ACTIVAR ANIMACIONES */
+
+.titulo-animado.animar,
+.animado.animar {
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}
+
+/* PRIMER TITULO */
+
+.titulo-diversion.animar {
+    animation-name: comicImpacto;
+    color: #d6ad55;
+}
+
+/* SEGUNDO TITULO */
+
+.titulo-dia.animar {
+    animation-name: entradaLateral;
+}
+
+/* TERCER TITULO */
+
+.titulo-entrada-titulo.animar {
+    animation-name: golpeComic;
+}
+
+/* CUARTO TITULO */
+
+.titulo-diaadia-titulo.animar {
+    animation-name: vibracionComic;
+}
+
+/* QUINTO TITULO */
+
+.titulo-galeria-titulo.animar {
+    animation-name: zoomComic;
+}
+
+/* EFECTO DE IMPACTO */
+
+@keyframes comicImpacto {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.3) rotate(-10deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(5deg);
+    }
+
+    70% {
+        transform: scale(0.9) rotate(-3deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+
+}
+/* ENTRADA DESDE LA IZQUIERDA */
+
+@keyframes entradaLateral {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+/* GOLPE DESDE ARRIBA */
+
+@keyframes golpeComic {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-80px) scale(0.7);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(15px) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+/* VIBRACION */
+
+@keyframes vibracionComic {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateX(-8px);
+    }
+
+    40% {
+        transform: translateX(8px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+/* ZOOM DE APARICION */
+
+@keyframes zoomComic {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}

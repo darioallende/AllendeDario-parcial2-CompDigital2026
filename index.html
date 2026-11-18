@@ -1,33 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
     <title>Argentina Comic Con 2026</title>
-
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-
-
     <link rel="stylesheet" href="style.css">
 
 </head>
-
-
-
 <body>
 
 
@@ -67,11 +49,13 @@
 
             <a href="#ubicacion">Ubicación</a>
 
+            <a href="#tienda">ENTRADAS</a>
+
         </nav>
 
 
 
-        <a href="#tienda" class="btn btn-header">COMPRAR</a>
+
 
 
 
@@ -152,17 +136,9 @@
             <div class="section-title">
 
 
-
-
-
-                <h2>
-
-                    DIVERSIÓN PARA
-
-                    <strong>CHICOS Y GRANDES</strong>
-
-                </h2>
-
+<h2 class="titulo-diversion titulo-animado">
+    DIVERSION PARA GRANDES Y CHICOS
+</h2>
 
 
             </div>
@@ -331,7 +307,7 @@
 
 
 
-                <h2>
+                <h2 class="titulo-dia titulo-animado">
 
                     ELEGÍ TU
 
@@ -401,13 +377,6 @@
 
 
 
-                        <a href="#tienda" class="btn btn-buy">
-
-                            COMPRAR
-
-                        </a>
-
-
 
                     </div>
 
@@ -467,13 +436,6 @@
 
                         </span>
 
-
-
-                        <a href="#tienda" class="btn btn-buy">
-
-                            COMPRAR
-
-                        </a>
 
 
 
@@ -537,13 +499,6 @@
 
 
 
-                        <a href="#tienda" class="btn btn-buy">
-
-                            COMPRAR
-
-                        </a>
-
-
 
                     </div>
 
@@ -563,35 +518,30 @@
 
         </section>
 
-        <section id="tienda" class="tienda">
+        
+<section id="tienda" class="tienda">
 
     <div class="tienda-encabezado">
 
         <p class="etiqueta-seccion">TU AVENTURA COMIENZA ACÁ</p>
 
-        <h2>CONSEGUÍ TU ENTRADA</h2>
+        <h2 class="titulo-entrada-titulo animado">CONSEGUÍ TU ENTRADA</h2>
 
         <p>
-
             Tres días de cultura pop, anime, cosplay y experiencias
-
             que no te vas a querer perder.
-
         </p>
 
     </div>
 
 
+    <!-- TARJETAS DE ENTRADAS -->
 
     <div class="entradas-contenedor">
 
-
-
-        <!--*&#x20;ENTRADA COMÚN&#x20;*-->
+        <!-- DAY PASS -->
 
         <article class="entrada-card entrada-comun">
-
-
 
             <div class="entrada-ilustracion anime-comun">
 
@@ -600,16 +550,14 @@
                 <span class="anime-efecto">¡POW!</span>
 
                 <div class="anime-personaje personaje-comun">
-
                     <span>✦</span>
-
                 </div>
 
-                <p class="anime-texto">ONE DAY<br>ONE EPIC STORY</p>
+                <p class="anime-texto">
+                    ONE DAY<br>ONE EPIC STORY
+                </p>
 
             </div>
-
-
 
             <div class="entrada-info">
 
@@ -618,124 +566,324 @@
                 <h3>DAY PASS</h3>
 
                 <p class="entrada-descripcion">
-
                     Elegí tu día favorito y viví la experiencia
-
                     Argentina Comic Con.
-
                 </p>
 
-
-
                 <ul>
-
                     <li>Acceso a 1 día del evento</li>
-
                     <li>Stands y experiencias</li>
-
                     <li>Shows y actividades</li>
-
                 </ul>
-
-
 
                 <p class="entrada-precio">$46.000</p>
 
+                <button
+                    type="button"
+                    class="btn-entrada agregar-carrito"
+                    data-id="daypass"
+                    data-nombre="DAY PASS"
+                    data-precio="46000">
 
+                    COMPRAR ENTRADA
 
-                <button type="button" class="btn-entrada agregar-carrito" data-id="daypass" data-nombre="DAY PASS" data-precio="46000">COMPRAR ENTRADA</button>
+                </button>
 
             </div>
-
-
 
         </article>
 
 
-
-
-
-        <!--*&#x20;PASE ESPECIAL GOLD&#x20;*-->
+        <!-- GOLD PASS -->
 
         <article class="entrada-card entrada-gold">
 
-
-
             <div class="gold-destacado">
-
                 ✦ EDICIÓN ESPECIAL ✦
-
             </div>
-
-
 
             <div class="entrada-ilustracion anime-gold">
 
-                <span class="anime-etiqueta gold-texto">GOLD PASS</span>
+                <span class="anime-etiqueta gold-texto">
+                    GOLD PASS
+                </span>
 
-                <span class="anime-efecto gold-efecto">GOLD</span>
+                <span class="anime-efecto gold-efecto">
+                    GOLD
+                </span>
 
                 <div class="anime-personaje personaje-gold">
-
                     <span>✦</span>
-
                 </div>
 
                 <p class="anime-texto gold-texto">
-
                     THREE DAYS<br>LEGENDARY EXPERIENCE
-
                 </p>
 
             </div>
-
-
 
             <div class="entrada-info">
 
                 <span class="entrada-tipo gold-texto">
-
                     PASE PREMIUM
-
                 </span>
-
-
 
                 <h3>GOLD PASS</h3>
 
-
-
                 <p class="entrada-descripcion">
-
                     Tres días para vivir la Comic Con al máximo.
-
                     Una entrada especial con diseño exclusivo.
-
                 </p>
 
-
-
                 <ul>
-
                     <li>Acceso a los 3 días del evento</li>
-
                     <li>Stands y experiencias</li>
-
                     <li>Shows y actividades</li>
-
                     <li>Diseño especial GOLD</li>
-
                 </ul>
 
+                <p class="entrada-precio gold-texto">
+                    $99.000
+                </p>
 
+                <button
+                    type="button"
+                    class="btn-entrada btn-gold agregar-carrito"
+                    data-id="goldpass"
+                    data-nombre="GOLD PASS"
+                    data-precio="99000">
 
-                <p class="entrada-precio gold-texto">$99.000</p>
+                    CONSEGUIR GOLD PASS
 
-
-
-                <button type="button" class="btn-entrada btn-gold agregar-carrito" data-id="goldpass" data-nombre="GOLD PASS" data-precio="99000">CONSEGUIR GOLD PASS</button>
+                </button>
 
             </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- =================================
+         DATOS Y PAGO DE ENTRADAS
+    ================================== -->
+
+    <section class="checkout" id="datos-compra">
+
+        <div class="checkout-heading">
+
+            <p class="etiqueta-seccion">ASEGURÁ TU LUGAR</p>
+
+            <h2>FINALIZÁ TU COMPRA</h2>
+
+            <p>
+                Seguí los pasos y conseguí tus entradas
+                para Argentina Comic Con 2026.
+            </p>
+
+        </div>
+
+        <div class="checkout-grid">
+
+            <!-- RESUMEN -->
+
+            <div class="carrito-panel">
+
+                <h3>01. TU ENTRADA</h3>
+
+                <div id="carrito-vacio">
+                    Todavía no seleccionaste ninguna entrada.
+                </div>
+
+                <div id="carrito-lista"></div>
+
+                <label for="dia-pass">
+                    Día del evento (DAY PASS)
+                </label>
+
+                <select id="dia-pass">
+
+                    <option value="">Seleccioná un día</option>
+
+                    <option value="Viernes 4 de diciembre">
+                        Viernes 4 de diciembre
+                    </option>
+
+                    <option value="Sábado 5 de diciembre">
+                        Sábado 5 de diciembre
+                    </option>
+
+                    <option value="Domingo 6 de diciembre">
+                        Domingo 6 de diciembre
+                    </option>
+
+                </select>
+
+                <p class="carrito-total">
+                    TOTAL:
+                    <strong id="carrito-total">$0</strong>
+                </p>
+
+                <button
+                    type="button"
+                    class="btn-entrada vaciar-carrito"
+                    id="vaciar-carrito">
+
+                    VACIAR SELECCIÓN
+
+                </button>
+
+            </div>
+
+
+            <!-- FORMULARIO DE PAGO -->
+
+            <form class="compra-form" id="form-compra">
+
+                <h3>02. TUS DATOS</h3>
+
+                <label for="compra-nombre">
+                    Nombre y apellido
+                </label>
+
+                <input
+                    type="text"
+                    id="compra-nombre"
+                    name="nombre"
+                    required
+                >
+
+                <label for="compra-email">
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="compra-email"
+                    name="email"
+                    required
+                >
+
+                <label for="compra-dni">
+                    DNI
+                </label>
+
+                <input
+                    type="text"
+                    id="compra-dni"
+                    name="dni"
+                    maxlength="8"
+                    required
+                >
+
+                <h3>03. MEDIO DE PAGO</h3>
+
+                <label for="medio-pago">
+                    Seleccioná tu tarjeta
+                </label>
+
+                <select id="medio-pago" name="tarjeta" required>
+
+                    <option value="">Seleccioná una tarjeta</option>
+
+                    <option value="Visa">Visa</option>
+
+                    <option value="Mastercard">Mastercard</option>
+
+                    <option value="American Express">
+                        American Express
+                    </option>
+
+                </select>
+
+                <label for="numero-tarjeta">
+                    Número de tarjeta
+                </label>
+
+                <input
+                    type="text"
+                    id="numero-tarjeta"
+                    name="numeroTarjeta"
+                    placeholder="Número de tarjeta"
+                    required
+                >
+
+                <label for="nombre-titular">
+                    Nombre del titular
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre-titular"
+                    name="titular"
+                    required
+                >
+
+                <label for="cuotas">
+                    Cantidad de cuotas
+                </label>
+
+                <select id="cuotas" name="cuotas" required>
+
+                    <option value="1">1 pago</option>
+
+                    <option value="2">2 cuotas</option>
+
+                    <option value="3">3 cuotas sin interés</option>
+
+                </select>
+
+                <p id="mensaje-cuotas" class="aviso-demo">
+                    Visa y Mastercard: 3 cuotas sin interés.
+                    American Express: un solo pago.
+                </p>
+
+                <div class="resumen-pago">
+
+                    <p>Total de la compra:</p>
+
+                    <strong id="total-pago">$0</strong>
+
+                </div>
+
+                <button type="submit" class="btn-entrada">
+                    CONFIRMAR COMPRA
+                </button>
+
+                <p id="mensaje-compra"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTORIAL DE COMPRAS -->
+
+    <section class="historial" id="mis-compras">
+
+        <div class="checkout-heading">
+
+            <p class="etiqueta-seccion">TUS PEDIDOS</p>
+
+            <h2>MIS COMPRAS</h2>
+
+            <p>
+                Acá vas a encontrar las entradas que compraste.
+            </p>
+
+        </div>
+
+        <div id="historial-lista">
+
+            <p>Todavía no tenés compras realizadas.</p>
+
+        </div>
+
+    </section>
+
+
 
 
 
@@ -768,7 +916,7 @@
 
 
 
-                <h2>
+                <h2 class="titulo-diaadia-titulo animado">
 
                     DÍA A
 
@@ -1268,7 +1416,7 @@
 
 
 
-                <h2>
+                <h2 class="titulo-galeria-titulo animado">
 
                     GALERÍA
 
