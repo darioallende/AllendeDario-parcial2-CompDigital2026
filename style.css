@@ -1647,3 +1647,120 @@ input {
     }
 
 }
+/* ==========================================
+   CARRITO DE ENTRADAS
+========================================== */
+
+.carrito-entradas {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 35px;
+    background: #1b263b;
+    border: 2px solid #ffd60a;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.carrito-entradas h2 {
+    font-family: "Bangers", cursive;
+    font-size: 2.5rem;
+    color: #ffd60a;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#carrito-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px;
+    background: #0d1b2a;
+    border: 1px solid #415a77;
+    border-radius: 10px;
+}
+
+.carrito-item span {
+    color: #f8f9fa;
+    font-weight: 600;
+    flex: 1;
+}
+
+.carrito-item strong {
+    color: #ffd60a;
+    font-size: 1.1rem;
+}
+
+.carrito-item button {
+    padding: 9px 15px;
+    background: #d62828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.carrito-item button:hover {
+    background: #a4161a;
+}
+
+.carrito-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #415a77;
+    color: #f8f9fa;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+#carrito-total {
+    color: #ffd60a;
+    font-size: 1.6rem;
+}
+
+#btn-ir-compra {
+    display: block;
+    margin: 30px auto 0;
+    cursor: pointer;
+}
+
+#btn-ir-compra:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .carrito-entradas {
+        margin: 35px 15px;
+        padding: 20px;
+    }
+
+    .carrito-item {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .carrito-item span {
+        min-width: 100%;
+    }
+
+    .carrito-total {
+        font-size: 1.1rem;
+    }
+
+}

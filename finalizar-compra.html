@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finalizá tu compra | Argentina Comic Con 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <span>ARGENTINA</span>
+            <strong>COMIC CON</strong>
+            <small>2026</small>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="fechas.html">Fechas</a>
+            <a href="dia-a-dia.html">Día a Día</a>
+            <a href="galeria.html">Galería</a>
+            <a href="merch.html">MERCH</a>
+            <a href="suscribite.html">Suscribite</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="fechas.html#tienda">ENTRADAS</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="checkout" id="datos-compra">
+
+            <div class="checkout-heading">
+
+                <p class="etiqueta-seccion">
+                    ASEGURÁ TU LUGAR
+                </p>
+
+                <h2>FINALIZÁ TU COMPRA</h2>
+
+                <p>
+                    Estás a un paso de vivir Argentina Comic Con 2026.
+                </p>
+
+            </div>
+
+
+            <div class="checkout-grid">
+
+
+                <!-- RESUMEN DE LA ENTRADA -->
+
+                <div class="carrito-panel">
+
+                    <h3>01. TU ENTRADA</h3>
+
+                    <div id="entrada-seleccionada">
+                        Cargando entrada...
+                    </div>
+
+                    <div id="dia-pass-contenedor">
+
+                        <label for="dia-pass">
+                            Día del evento
+                        </label>
+
+                        <select id="dia-pass">
+
+                            <option value="">
+                                Seleccioná un día
+                            </option>
+
+                            <option value="Viernes 4 de diciembre">
+                                Viernes 4 de diciembre
+                            </option>
+
+                            <option value="Sábado 5 de diciembre">
+                                Sábado 5 de diciembre
+                            </option>
+
+                            <option value="Domingo 6 de diciembre">
+                                Domingo 6 de diciembre
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <p class="carrito-total">
+                        TOTAL:
+                        <strong id="total-pago">$0</strong>
+                    </p>
+
+                    <a href="fechas.html#tienda" class="btn-entrada">
+                        VOLVER A LAS ENTRADAS
+                    </a>
+
+                </div>
+
+
+                <!-- FORMULARIO DE COMPRA -->
+
+                <form class="compra-form" id="form-compra">
+
+                    <h3>02. TUS DATOS</h3>
+
+
+                    <label for="compra-nombre">
+                        Nombre y apellido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="compra-nombre"
+                        name="nombre"
+                        required
+                    >
+
+
+                    <label for="compra-email">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="compra-email"
+                        name="email"
+                        required
+                    >
+
+
+                    <label for="compra-dni">
+                        DNI
+                    </label>
+
+                    <input
+                        type="text"
+                        id="compra-dni"
+                        name="dni"
+                        maxlength="8"
+                        required
+                    >
+
+
+                    <h3>03. MEDIO DE PAGO</h3>
+
+
+                    <label for="medio-pago">
+                        Seleccioná tu tarjeta
+                    </label>
+
+                    <select id="medio-pago" name="tarjeta" required>
+
+                        <option value="">
+                            Seleccioná una tarjeta
+                        </option>
+
+                        <option value="Visa">
+                            Visa
+                        </option>
+
+                        <option value="Mastercard">
+                            Mastercard
+                        </option>
+
+                        <option value="American Express">
+                            American Express
+                        </option>
+
+                    </select>
+
+
+                    <label for="numero-tarjeta">
+                        Número de tarjeta
+                    </label>
+
+                    <input
+                        type="text"
+                        id="numero-tarjeta"
+                        name="numeroTarjeta"
+                        placeholder="Número de tarjeta"
+                        required
+                    >
+
+
+                    <label for="nombre-titular">
+                        Nombre del titular
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre-titular"
+                        name="titular"
+                        required
+                    >
+
+
+                    <label for="cuotas">
+                        Cantidad de cuotas
+                    </label>
+
+                    <select id="cuotas" name="cuotas" required>
+
+                        <option value="1">
+                            1 pago
+                        </option>
+
+                        <option value="2">
+                            2 cuotas
+                        </option>
+
+                        <option value="3">
+                            3 cuotas sin interés
+                        </option>
+
+                    </select>
+
+
+                    <p id="mensaje-cuotas" class="aviso-demo">
+                        Visa y Mastercard: 3 cuotas sin interés.
+                        American Express: un solo pago.
+                    </p>
+
+
+                    <div class="resumen-pago">
+
+                        <p>Total de la compra:</p>
+
+                        <strong id="total-compra">$0</strong>
+
+                    </div>
+
+
+                    <button type="submit" class="btn-entrada">
+                        CONFIRMAR COMPRA
+                    </button>
+
+                    <p id="mensaje-compra"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORIAL DE COMPRAS -->
+
+        <section class="historial" id="mis-compras">
+
+            <div class="checkout-heading">
+
+                <p class="etiqueta-seccion">
+                    TUS PEDIDOS
+                </p>
+
+                <h2>MIS COMPRAS</h2>
+
+                <p>
+                    Acá vas a encontrar las entradas que compraste.
+                </p>
+
+            </div>
+
+
+            <div id="historial-lista">
+
+                <p>
+                    Todavía no tenés compras realizadas.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <strong>ARGENTINA COMIC CON</strong>
+            <span>2026</span>
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Inicio</a>
+            <a href="fechas.html">Fechas</a>
+            <a href="dia-a-dia.html">Día a Día</a>
+            <a href="galeria.html">Galería</a>
+            <a href="suscribite.html">Suscribite</a>
+            <a href="faq.html">FAQ</a>
+            <a href="ubicacion.html">Ubicación</a>
+
+        </div>
+
+        <div class="socials">
+
+            <a href="https://www.instagram.com/argcomiccon/?hl=es">Instagram</a>
+            <a href="https://x.com/ArgComicCon">Twitter / X</a>
+            <a href="https://www.facebook.com/argcomiccon/?locale=es_LA">Facebook</a>
+            <a href="https://www.youtube.com/@ArgComicCon">YouTube</a>
+            <a href="https://www.tiktok.com/@argcomiccon">TikTok</a>
+
+        </div>
+
+        <p class="copyright">
+            2026 Argentina Comic Con
+        </p>
+
+    </footer>
+
+<script src="animaciones.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
